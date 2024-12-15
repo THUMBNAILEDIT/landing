@@ -1,0 +1,153 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @include small-desktop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__link {
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+
+.footer-logo__left {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white);
+
+  @include small-mobile {
+    font-size: 32px;
+  }
+
+  @include big-mobile {
+    font-size: 36px;
+  }
+
+  @include tablet {
+    font-size: 58px;
+  }
+
+  @include small-desktop {
+    font-size: 64px;
+  }
+}
+
+.footer-logo__right {
+  font-size: 32px;
+  font-family: HYPERGOALS;
+  color: var(--green);
+
+  @include small-mobile {
+    font-size: 36px;
+  }
+
+  @include big-mobile {
+    font-size: 42px;
+  }
+
+  @include tablet {
+    font-size: 64px;
+  }
+
+  @include small-desktop {
+    font-size: 70px;
+  }
+}
+
+.footer-carousel {
+  width: calc(100% + 90px);
+  max-width: 100vw;
+
+  display: flex;
+  overflow: hidden;
+
+  margin-left: -45px;
+  margin-right: -45px;
+
+  margin-bottom: 50px;
+}
+
+.footer-carousel__track {
+  display: flex;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+.footer-carousel img {
+  flex-shrink: 0;
+  object-fit: cover;
+  width: 144px;
+  height: 81px;
+
+  @include big-mobile {
+    width: 160px;
+    height: 90px;
+  }
+
+  @include tablet {
+    width: 240px;
+    height: 135px;
+  }
+
+  @include small-desktop {
+    width: 320px;
+    height: 180px;
+  }
+}
+
+.footer-socials__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+
+  @include small-mobile {
+    max-width: 80vw;
+  }
+
+  @include big-mobile {
+    min-width: 90vw;
+  }
+
+  @include tablet {
+    min-width: 70vw;
+  }
+
+  @include small-desktop {
+    max-width: 60vw;
+  }
+}
+
+.footer-socials__image {
+  width: 60px;
+  height: 60px;
+
+  @include big-mobile {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.footer-terms__link {
+  color: var(--white);
+}

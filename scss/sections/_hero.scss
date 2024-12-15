@@ -1,0 +1,83 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(..//../images/hero/hero-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+
+  @include tablet {
+    justify-content: start;
+    padding-left: 45px;
+    padding-bottom: 200px;
+  }
+
+  @include small-desktop {
+  }
+
+  @include big-desktop {
+    background-image: url(..//../images/hero/hero-desktop.jpg);
+    padding-bottom: 250px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .hero {
+    background-image: url(..//../images/hero/hero-smalldesktop.jpg);
+  }
+}
+
+.hero-title__mobile {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), 0px 0px 15px rgba(0, 0, 0, 0.6);
+
+  line-height: 1;
+  width: 85%;
+  font-size: 8vw;
+  text-align: center;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.hero-title__mobile-emp {
+  font-size: 8.8vw;
+  font-family: HYPERGOALS;
+  color: var(--green);
+}
+
+.hero-title__desktop {
+  display: none;
+
+  @include tablet {
+    line-height: 1;
+    display: block;
+    width: 44%;
+    font-size: 5vw;
+  }
+
+  @include small-desktop {
+    width: 48%;
+    font-size: 4.4vw;
+  }
+}
+
+.hero-title__desktop-emp {
+  font-family: HYPERGOALS;
+  color: var(--green);
+  @include tablet {
+    font-size: 5.4vw;
+  }
+
+  @include small-desktop {
+    font-size: 4.8vw;
+  }
+}

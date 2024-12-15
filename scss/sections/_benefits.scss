@@ -1,0 +1,213 @@
+.benefits {
+  background-color: var(--green);
+  height: fit-content;
+
+  @include big-mobile {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include big-desktop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.benefits .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    max-width: 720px;
+  }
+
+  @include small-desktop {
+    max-width: 960px;
+  }
+
+  @include big-desktop {
+    max-width: 1350px;
+  }
+}
+
+.benefits-card {
+  position: relative;
+  overflow: hidden;
+
+  aspect-ratio: 393 / 552;
+
+  width: 100%;
+
+  @include small-mobile {
+    width: 270px;
+  }
+
+  @include big-mobile {
+    width: 360px;
+  }
+
+  @include tablet {
+    width: 210px;
+  }
+
+  @include small-desktop {
+    width: 270px;
+  }
+
+  @include big-desktop {
+    width: 393px;
+  }
+}
+
+.benefits-card .background {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  z-index: 1;
+}
+
+.benefits-card .card-image {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 2;
+
+  width: 70%;
+  top: 15px;
+
+  @include small-mobile {
+    width: 70%;
+    top: 20px;
+  }
+
+  @include big-mobile {
+    width: 70%;
+    top: 20px;
+  }
+
+  @include tablet {
+    width: 70%;
+    top: 10px;
+  }
+
+  @include small-desktop {
+    width: 60%;
+    top: 20px;
+  }
+
+  @include big-desktop {
+    width: 70%;
+  }
+}
+
+.benefits-card .card-title {
+  position: absolute;
+
+  font-size: 18px;
+
+  font-weight: bold;
+  z-index: 2;
+
+  top: 220px;
+  left: 20px;
+
+  @include small-mobile {
+    top: 200px;
+    left: 20px;
+  }
+
+  @include big-mobile {
+    top: 300px;
+    left: 30px;
+    font-size: 24px;
+  }
+
+  @include tablet {
+    top: 160px;
+    left: 20px;
+    font-size: 18px;
+  }
+
+  @include small-desktop {
+    top: 190px;
+    left: 20px;
+    font-size: 20px;
+  }
+
+  @include big-desktop {
+    top: 300px;
+    left: 30px;
+
+    font-size: 32px;
+  }
+}
+
+.benefits-card .card-text {
+  position: absolute;
+
+  width: 80%;
+
+  z-index: 2;
+
+  top: 260px;
+  left: 20px;
+
+  @include small-mobile {
+    top: 240px;
+    left: 20px;
+  }
+
+  @include big-mobile {
+    top: 350px;
+    left: 30px;
+  }
+
+  @include tablet {
+    top: 190px;
+    left: 20px;
+    font-size: 12px;
+  }
+
+  @include small-desktop {
+    top: 230px;
+    left: 20px;
+
+    font-size: 16px;
+  }
+
+  @include big-desktop {
+    top: 380px;
+    left: 30px;
+
+    font-size: 18px;
+  }
+}
+
+.curvyline-greenblack {
+  width: 100%;
+  height: 60px;
+  background-image: url(..//../images/backgrounds/backgroundline-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.curvyline-blackgreen {
+  width: 100%;
+  height: 60px;
+  background-image: url(..//../images/backgrounds/backgroundline-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
