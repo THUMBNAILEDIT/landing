@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: var(--white);
@@ -641,9 +645,117 @@ img {
   }
 }
 
+html {
+  scroll-padding-top: 80px;
+}
+
 .cases {
-  height: 100vh;
   background-color: var(--green);
+}
+
+.cases .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sticky-container {
+  position: relative;
+  height: fit-content;
+  padding-top: 20px;
+}
+
+.sticky-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 80px;
+  aspect-ratio: 1200/684;
+  width: 100%;
+  height: fit-content;
+  margin: 30px 0;
+  padding: 20px;
+  background-color: var(--black);
+  border-radius: 30px;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .sticky-div {
+    width: 720px;
+    height: 500px;
+    top: 120px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sticky-div {
+    width: 960px;
+    height: 600px;
+    margin: 60px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .sticky-div {
+    width: 1024px;
+    height: 640px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sticky-div {
+    position: relative;
+    top: auto;
+  }
+}
+.sticky-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .sticky-title {
+    font-size: 32px;
+  }
+}
+
+.sticky-text {
+  font-size: 16px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .sticky-text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sticky-text {
+    font-size: 16px;
+  }
+}
+
+.sticky-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .sticky-wrap {
+    flex-direction: row;
+  }
+}
+
+.sticky-image {
+  width: 100%;
+  border-radius: 30px;
+}
+@media screen and (min-width: 768px) {
+  .sticky-image {
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 #faq {
