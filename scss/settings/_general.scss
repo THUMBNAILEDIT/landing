@@ -12,19 +12,11 @@ html {
   font-display: swap;
 }
 
-// @font-face {
-//   font-family: "HYPEGOALS";
-//   src: url("../fonts/HYPEGOALS.woff2") format("woff2"),
-//     url("../fonts/HYPEGOALS.woff") format("woff"),
-//     url("../fonts/HYPEGOALS.ttf") format("truetype");
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
 @font-face {
   font-family: "HYPEGOALS";
-  src: url("../fonts/HYPEGOALS.ttf") format("truetype");
+  src: url("../fonts/HYPEGOALS.woff2") format("woff2"),
+    url("../fonts/HYPEGOALS.woff") format("woff"),
+    url("../fonts/HYPEGOALS.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -53,7 +45,8 @@ body::-webkit-scrollbar {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   letter-spacing: normal;
-  color: var(--green);
+  // color: var(--green);
+  color: red;
 }
 
 .list {
