@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   letter-spacing: normal;
-  color: red;
+  color: var(--green);
 }
 
 .list {
