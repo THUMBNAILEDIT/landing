@@ -2,18 +2,44 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-  color: var(--white);
-  background-color: var(--black);
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter.woff2") format("woff2"), url("../fonts/Inter.woff") format("woff"), url("../fonts/Inter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: HYPERGOALS;
-  src: url("../fonts/HYPEGOALS.TTF");
+  font-family: "HYPEGOALS";
+  src: url("../fonts/HYPEGOALS.woff2") format("woff2"), url("../fonts/HYPEGOALS.woff") format("woff"), url("../fonts/HYPEGOALS.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: var(--white);
+  background-color: var(--black);
 }
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+.emp {
+  font-family: "HYPEGOALS", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: normal;
+  color: var(--green);
 }
 
 .list {
@@ -165,8 +191,6 @@ img {
 @media screen and (min-width: 320px) {
   .header-logo__right {
     font-size: 19px;
-    font-family: HYPERGOALS;
-    color: var(--green);
   }
 }
 @media screen and (min-width: 425px) {
@@ -252,7 +276,6 @@ img {
 
 .header-button__text {
   font-size: 23px;
-  font-family: HYPERGOALS;
   color: var(--black);
 }
 @media screen and (min-width: 320px) {
@@ -286,6 +309,12 @@ img {
   background-size: cover;
   background-position: center;
 }
+
+@media screen and (min-width: 680px) {
+  .hero {
+    background-image: url(..//../images/hero/hero-smalldesktop.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     justify-content: start;
@@ -300,11 +329,6 @@ img {
   }
 }
 
-@media screen and (min-width: 680px) {
-  .hero {
-    background-image: url(..//../images/hero/hero-smalldesktop.jpg);
-  }
-}
 .hero-title__mobile {
   position: absolute;
   top: 15%;
@@ -323,9 +347,7 @@ img {
 }
 
 .hero-title__mobile-emp {
-  font-size: 8.8vw;
-  font-family: HYPERGOALS;
-  color: var(--green);
+  font-size: 9.4vw;
 }
 
 .hero-title__desktop {
@@ -346,18 +368,14 @@ img {
   }
 }
 
-.hero-title__desktop-emp {
-  font-family: HYPERGOALS;
-  color: var(--green);
-}
 @media screen and (min-width: 768px) {
   .hero-title__desktop-emp {
-    font-size: 5.4vw;
+    font-size: 5.8vw;
   }
 }
 @media screen and (min-width: 1024px) {
   .hero-title__desktop-emp {
-    font-size: 4.8vw;
+    font-size: 5vw;
   }
 }
 
@@ -796,6 +814,7 @@ html {
   line-height: 1;
   margin-left: 9px;
   margin-bottom: 10px;
+  font-size: 24px;
 }
 @media screen and (min-width: 425px) {
   .waitlist-form__title {
@@ -810,7 +829,7 @@ html {
 }
 @media screen and (min-width: 1024px) {
   .waitlist-form__title {
-    width: 90%;
+    width: 80%;
     font-size: 36px;
   }
 }
@@ -821,35 +840,30 @@ html {
   }
 }
 
-.waitlist-form__title-emp {
-  font-family: HYPERGOALS;
-  color: var(--green);
+@media screen and (min-width: 320px) {
+  .waitlist-form__title-emp {
+    font-size: 28px;
+  }
 }
 @media screen and (min-width: 425px) {
   .waitlist-form__title-emp {
-    font-size: 38px;
+    font-size: 42px;
   }
 }
 @media screen and (min-width: 768px) {
   .waitlist-form__title-emp {
-    font-size: 50px;
+    font-size: 56px;
   }
 }
 @media screen and (min-width: 1024px) {
   .waitlist-form__title-emp {
-    font-size: 38px;
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 1440px) {
   .waitlist-form__title-emp {
-    font-size: 50px;
+    font-size: 56px;
   }
-}
-
-.waitlist-form__text {
-  margin-left: 9px;
-  margin-bottom: 15px;
-  font-weight: 700;
 }
 
 .waitlist-video {
@@ -1037,8 +1051,6 @@ html {
 
 .footer-logo__right {
   font-size: 32px;
-  font-family: HYPERGOALS;
-  color: var(--green);
 }
 @media screen and (min-width: 320px) {
   .footer-logo__right {

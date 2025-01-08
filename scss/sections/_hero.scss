@@ -9,25 +9,24 @@
   background-image: url(..//../images/hero/hero-mobile.jpg);
   background-size: cover;
   background-position: center;
+}
 
+@media screen and (min-width: 680px) {
+  .hero {
+    background-image: url(..//../images/hero/hero-smalldesktop.jpg);
+  }
+}
+
+.hero {
   @include tablet {
     justify-content: start;
     padding-left: 45px;
     padding-bottom: 200px;
   }
 
-  @include small-desktop {
-  }
-
   @include big-desktop {
     background-image: url(..//../images/hero/hero-desktop.jpg);
     padding-bottom: 250px;
-  }
-}
-
-@media screen and (min-width: 680px) {
-  .hero {
-    background-image: url(..//../images/hero/hero-smalldesktop.jpg);
   }
 }
 
@@ -49,9 +48,7 @@
 }
 
 .hero-title__mobile-emp {
-  font-size: 8.8vw;
-  font-family: HYPERGOALS;
-  color: var(--green);
+  font-size: 9.4vw;
 }
 
 .hero-title__desktop {
@@ -71,13 +68,11 @@
 }
 
 .hero-title__desktop-emp {
-  font-family: HYPERGOALS;
-  color: var(--green);
   @include tablet {
-    font-size: 5.4vw;
+    font-size: 5.8vw;
   }
 
   @include small-desktop {
-    font-size: 4.8vw;
+    font-size: 5vw;
   }
 }
