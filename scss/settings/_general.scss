@@ -12,11 +12,19 @@ html {
   font-display: swap;
 }
 
+// @font-face {
+//   font-family: "HYPEGOALS";
+//   src: url("../fonts/HYPEGOALS.woff2") format("woff2"),
+//     url("../fonts/HYPEGOALS.woff") format("woff"),
+//     url("../fonts/HYPEGOALS.ttf") format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
 @font-face {
   font-family: "HYPEGOALS";
-  src: url("../fonts/HYPEGOALS.woff2") format("woff2"),
-    url("../fonts/HYPEGOALS.woff") format("woff"),
-    url("../fonts/HYPEGOALS.ttf") format("truetype");
+  src: url("../fonts/HYPEGOALS.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
