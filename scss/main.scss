@@ -2,14 +2,15 @@
 @import "./settings/colours";
 @import "./settings/mixins";
 @import "./settings/container";
-@import "./sections/header";
-@import "./sections/hero";
-@import "./sections/benefits";
-@import "./sections/process";
-@import "./sections/cases";
-@import "./sections/waitlist";
-@import "./sections/faq";
+
+@import "./shared-sections/header";
+@import "./pages/main/hero";
+@import "./pages/main/benefits";
+@import "./pages/main/process";
+@import "./pages/main/cases";
+@import "./pages/main/waitlist";
+@import "./pages/main/faq";
 
 @import "./pages/terms/terms";
 
-@import "./sections/footer";
+@import "./shared-sections/footer";
