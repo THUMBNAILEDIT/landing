@@ -68,17 +68,15 @@
   }
 
   @include tablet {
-    width: 80%;
+    width: 90%;
     font-size: 48px;
   }
 
   @include small-desktop {
-    width: 80%;
     font-size: 36px;
   }
 
   @include big-desktop {
-    width: 80%;
     font-size: 48px;
   }
 }

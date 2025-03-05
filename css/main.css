@@ -826,19 +826,17 @@ html {
 }
 @media screen and (min-width: 768px) {
   .waitlist-form__title {
-    width: 80%;
+    width: 90%;
     font-size: 48px;
   }
 }
 @media screen and (min-width: 1024px) {
   .waitlist-form__title {
-    width: 80%;
     font-size: 36px;
   }
 }
 @media screen and (min-width: 1440px) {
   .waitlist-form__title {
-    width: 80%;
     font-size: 48px;
   }
 }
@@ -892,7 +890,6 @@ html {
 
 .waitlist-video__player {
   width: 90%;
-  border: 3px solid var(--green);
 }
 
 #faq {
