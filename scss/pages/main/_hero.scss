@@ -32,14 +32,18 @@
 
 .hero-title__mobile {
   position: absolute;
-  top: 15%;
+  // top: 15%;
+  top: 30%;
   left: 50%;
   transform: translateX(-50%);
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), 0px 0px 15px rgba(0, 0, 0, 0.6);
+  // text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), 0px 0px 15px rgba(0, 0, 0, 0.6);
+
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1), 0px 0px 15px rgba(0, 0, 0, 1);
 
   line-height: 1;
   width: 85%;
-  font-size: 8vw;
+  // font-size: 8vw;
+  font-size: 10vw;
   text-align: center;
 
   @include tablet {
@@ -48,7 +52,8 @@
 }
 
 .hero-title__mobile-emp {
-  font-size: 9.4vw;
+  // font-size: 9.4vw;
+  font-size: 10.5vw;
 }
 
 .hero-title__desktop {

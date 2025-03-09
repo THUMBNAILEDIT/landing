@@ -163,27 +163,31 @@
   top: 260px;
   left: 20px;
 
+  font-size: 10px;
+
   @include small-mobile {
     top: 240px;
     left: 20px;
+    font-size: 12px;
   }
 
   @include big-mobile {
     top: 350px;
     left: 30px;
+    font-size: 16px;
   }
 
   @include tablet {
     top: 190px;
     left: 20px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   @include small-desktop {
     top: 230px;
     left: 20px;
 
-    font-size: 16px;
+    font-size: 14px;
   }
 
   @include big-desktop {
