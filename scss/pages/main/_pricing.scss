@@ -1,0 +1,157 @@
+.pricing {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pricing .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pricing__title {
+  font-size: 2.7em;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.pricing-plans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  margin: 0 auto;
+
+  @media screen and (min-width: 769px) {
+    width: 90%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 80%;
+  }
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  background: radial-gradient(circle at top, #191919, #292929);
+  width: 80%;
+  //   height: 500px;
+  min-height: 500px;
+
+  padding: 3rem;
+
+  border-radius: 10px;
+
+  @media screen and (min-width: 769px) {
+    // width: calc((100% - 60px) / 3);
+    width: 32%;
+  }
+}
+
+.pricing-card:nth-child(2) {
+  @media screen and (min-width: 769px) {
+    font-size: 1.2rem;
+    // height: 600px;
+    min-height: 600px;
+    width: 36%;
+  }
+}
+
+.pricing-card__wrapper {
+  align-self: flex-start;
+}
+
+.plan-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.plan-price {
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.plan-price .emp {
+  color: var(--green);
+  font-size: 2em;
+}
+
+.plan-credits {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: #a5a5a5;
+}
+
+.plan-includes {
+  margin-bottom: 1.5rem;
+  color: #a5a5a5;
+}
+
+.plan-includes h3 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.plan-includes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-includes li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.plan-includes img {
+  width: 18px;
+  height: 19px;
+}
+
+.plan-includes span {
+  font-weight: 700;
+  color: var(--black);
+  background-color: var(--green);
+}
+
+.plan-includes-unavailable {
+  margin-left: 28px;
+  color: #5a5a5a;
+}
+
+.plan-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  background-image: url(..//..//images/button-background/button.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 70%;
+  aspect-ratio: 3.29 / 1;
+  font-size: 5vw;
+
+  @media (min-width: 769px) {
+    width: 100%;
+
+    font-size: 3vw;
+    color: var(--black);
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-plans {
+    flex-direction: column;
+    align-items: center;
+  }
+}

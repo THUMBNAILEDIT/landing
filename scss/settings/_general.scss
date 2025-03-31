@@ -30,7 +30,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   color: var(--white);
-  background-color: var(--black);
+  // background-color: var(--black);
+  background: radial-gradient(circle at top, #181818, #000000);
 }
 
 body::-webkit-scrollbar {
@@ -45,7 +46,6 @@ body::-webkit-scrollbar {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   letter-spacing: normal;
-  color: var(--green);
 }
 
 .list {

@@ -1,60 +1,102 @@
-.process-container {
+.process {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  border-bottom: 1px solid #5a5a5a;
+}
+
+.process .container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include mobile {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+}
+
+.stages-section {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  background: radial-gradient(circle at top left, #1f1f1f, #0f0f0f);
+  gap: 20px;
+}
+
+.stages-container {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.stage-box {
+  background: var(--black);
+  border-radius: 8px;
+  border: 1px solid #a5a5a5;
+  padding: 2vh 2vw;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+.stage-box.active {
+  background: #5a5a5a;
+}
+
+.stage-image-container {
+  flex: 1;
+  min-width: 0;
+  display: flex;
   align-items: center;
-
-  padding-top: 100px;
-  padding-bottom: 100px;
+  justify-content: center;
 }
 
-.process-desktop {
-  display: none;
-
-  @include tablet {
-    display: block;
-    width: 80%;
-    height: auto;
-
-    max-width: 1440px;
-    margin-bottom: 50px;
-  }
-}
-
-.process-mobile {
-  width: 80%;
+.stage-image-container img {
+  width: 100%;
   height: auto;
-
-  max-width: 690px;
-  margin-bottom: 30px;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
-@media (min-width: 767px) {
-  .process-mobile {
+@media (max-width: 768px) {
+  .stages-section {
+    flex-direction: column;
+  }
+
+  .stages-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .stage-box {
+    flex: 1 1 0;
+    text-align: center;
+  }
+
+  .stage-image-container {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .process__text {
     display: none;
-  }
-}
-
-.process-text {
-  width: 80%;
-  text-align: center;
-
-  @include small-mobile {
-    font-size: 14px;
-    max-width: 390px;
-  }
-
-  @include big-mobile {
-    font-size: 16px;
-    max-width: 690px;
-  }
-
-  @include tablet {
-    font-size: 18px;
-    max-width: 960px;
-  }
-
-  @include small-desktop {
-    max-width: 1024px;
-    font-size: 20px;
   }
 }
