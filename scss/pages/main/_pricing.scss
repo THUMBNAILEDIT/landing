@@ -1,12 +1,15 @@
 .pricing {
-  padding-top: 50px;
   padding-bottom: 50px;
 
   border-bottom: 1px solid var(--darkgrey);
 
+  @media screen and (min-width: 480px) {
+    padding-top: 50px;
+  }
+
   & .container {
     padding-left: 30px;
-    padding-right: 30px;
+    padding: 30px;
   }
 }
 
@@ -46,7 +49,7 @@
 }
 
 .pricing-card__list {
-  width: 100%;
+  width: 252px;
 
   display: flex;
   justify-content: center;
@@ -83,6 +86,7 @@
 
 .pricing-card__item {
   width: 100%;
+  height: 390px;
 
   display: flex;
   flex-direction: column;
@@ -92,7 +96,7 @@
   background: radial-gradient(circle at top, #191919, #292929);
   border-radius: 10px;
 
-  padding: 40px;
+  padding: 25px;
 
   @media screen and (max-width: 479px) {
     gap: 20px;
@@ -100,6 +104,7 @@
 
   @media screen and (min-width: 480px) {
     height: 600px;
+    padding: 40px;
   }
 
   @media screen and (min-width: 768px) {
@@ -154,12 +159,13 @@
 
 .pricing-card__title {
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
-  font-size: clamp(24px, 6vw, 28px);
+  font-size: 17px;
 
   @media screen and (min-width: 480px) {
     font-size: 28px;
+    margin-bottom: 20px;
   }
 
   @media screen and (min-width: 768px) {
@@ -202,7 +208,7 @@
 .pricing-card__price-number {
   color: var(--green);
 
-  font-size: clamp(54px, 13.6vw, 64px);
+  font-size: 40px;
 
   @media screen and (min-width: 480px) {
     font-size: 64px;
@@ -244,7 +250,7 @@
 }
 
 .pricing-card__price {
-  font-size: clamp(24px, 6vw, 28px);
+  font-size: 17px;
   font-weight: 700;
 
   @media screen and (min-width: 480px) {
@@ -288,12 +294,14 @@
 
 .pricing-card__subtitle {
   color: var(--lightgrey);
-  margin-bottom: 25px;
 
-  font-size: clamp(18px, 4.6vw, 22px);
+  font-size: 14px;
+
+  margin-bottom: 15px;
 
   @media screen and (min-width: 480px) {
     font-size: 22px;
+    margin-bottom: 25px;
   }
 
   @media screen and (min-width: 768px) {
@@ -337,8 +345,7 @@
   font-weight: 700;
   margin-bottom: 10px;
 
-  font-size: 5.8vw;
-  font-size: clamp(23px, 5.8vw, 28px);
+  font-size: 17px;
 
   @media screen and (min-width: 480px) {
     font-size: 28px;
@@ -390,7 +397,7 @@
   align-items: center;
   gap: 10px;
 
-  font-size: 3.8vw;
+  font-size: 14px;
 
   @media screen and (min-width: 480px) {
     font-size: 22px;
@@ -518,9 +525,10 @@
   background-position: center;
 
   aspect-ratio: 3 / 1;
-  width: 90%;
+  width: 175px;
+  height: 58.333px;
 
-  font-size: clamp(24px, 10vw, 52px);
+  font-size: 32px;
   color: var(--black);
 
   @media screen and (min-width: 480px) {

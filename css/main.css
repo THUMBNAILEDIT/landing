@@ -273,7 +273,7 @@ img {
 }
 
 .hero__text {
-  font-size: 2.5vw;
+  font-size: 11px;
   text-align: center;
   max-width: 70%;
   line-height: 1.3;
@@ -458,25 +458,47 @@ img {
 }
 
 .channels__pfp {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  width: 35px;
   border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .channels__pfp {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .channels__info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 50px;
+  height: 35px;
+}
+@media screen and (min-width: 768px) {
+  .channels__info {
+    height: 50px;
+  }
 }
 
 .channels__name {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .channels__name {
+    font-size: 18px;
+  }
 }
 
 .channels__subscribers {
   color: var(--lightgrey);
+  font-size: 11px;
+}
+@media screen and (min-width: 768px) {
+  .channels__subscribers {
+    font-size: 16px;
+  }
 }
 
 .reviews {
@@ -619,7 +641,7 @@ img {
 }
 
 .reviews-name {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--lightgrey);
 }
 @media screen and (min-width: 768px) {
@@ -772,6 +794,8 @@ img {
   justify-content: center;
   flex-direction: column;
   padding: 10px;
+  background: radial-gradient(circle at top left, #383838, #1c1c1c);
+  border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -831,6 +855,7 @@ img {
 @media screen and (min-width: 768px) {
   .stage-box {
     height: 100px;
+    text-align: left;
     padding: 20px;
   }
 }
@@ -898,13 +923,17 @@ img {
 }
 
 .pricing {
-  padding-top: 50px;
   padding-bottom: 50px;
   border-bottom: 1px solid var(--darkgrey);
 }
+@media screen and (min-width: 480px) {
+  .pricing {
+    padding-top: 50px;
+  }
+}
 .pricing .container {
   padding-left: 30px;
-  padding-right: 30px;
+  padding: 30px;
 }
 
 .pricing__title {
@@ -944,7 +973,7 @@ img {
 }
 
 .pricing-card__list {
-  width: 100%;
+  width: 252px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -983,13 +1012,14 @@ img {
 
 .pricing-card__item {
   width: 100%;
+  height: 390px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   background: radial-gradient(circle at top, #191919, #292929);
   border-radius: 10px;
-  padding: 40px;
+  padding: 25px;
 }
 @media screen and (max-width: 479px) {
   .pricing-card__item {
@@ -999,6 +1029,7 @@ img {
 @media screen and (min-width: 480px) {
   .pricing-card__item {
     height: 600px;
+    padding: 40px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1054,12 +1085,13 @@ img {
 
 .pricing-card__title {
   font-weight: 700;
-  margin-bottom: 20px;
-  font-size: clamp(24px, 6vw, 28px);
+  margin-bottom: 10px;
+  font-size: 17px;
 }
 @media screen and (min-width: 480px) {
   .pricing-card__title {
     font-size: 28px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1107,7 +1139,7 @@ img {
 
 .pricing-card__price-number {
   color: var(--green);
-  font-size: clamp(54px, 13.6vw, 64px);
+  font-size: 40px;
 }
 @media screen and (min-width: 480px) {
   .pricing-card__price-number {
@@ -1156,7 +1188,7 @@ img {
 }
 
 .pricing-card__price {
-  font-size: clamp(24px, 6vw, 28px);
+  font-size: 17px;
   font-weight: 700;
 }
 @media screen and (min-width: 480px) {
@@ -1207,12 +1239,13 @@ img {
 
 .pricing-card__subtitle {
   color: var(--lightgrey);
-  margin-bottom: 25px;
-  font-size: clamp(18px, 4.6vw, 22px);
+  font-size: 14px;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 480px) {
   .pricing-card__subtitle {
     font-size: 22px;
+    margin-bottom: 25px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1261,8 +1294,7 @@ img {
 .pricing-card__includes {
   font-weight: 700;
   margin-bottom: 10px;
-  font-size: 5.8vw;
-  font-size: clamp(23px, 5.8vw, 28px);
+  font-size: 17px;
 }
 @media screen and (min-width: 480px) {
   .pricing-card__includes {
@@ -1319,7 +1351,7 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 3.8vw;
+  font-size: 14px;
 }
 @media screen and (min-width: 480px) {
   .pricing-card__info-item {
@@ -1457,8 +1489,9 @@ img {
   background-size: cover;
   background-position: center;
   aspect-ratio: 3/1;
-  width: 90%;
-  font-size: clamp(24px, 10vw, 52px);
+  width: 175px;
+  height: 58.333px;
+  font-size: 32px;
   color: var(--black);
   cursor: pointer;
 }
@@ -1598,7 +1631,8 @@ h1 {
   border-bottom: none;
 }
 .faq-item .faq-question {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 700;
 }
 @media screen and (min-width: 480px) {
   .faq-item .faq-question {
@@ -1627,7 +1661,7 @@ h1 {
 }
 .faq-item .faq-answer {
   max-height: 0;
-  font-size: 14px;
+  font-size: 11px;
   color: var(--lightgrey);
   overflow: hidden;
   transition: max-height 0.3s ease, padding 0.3s ease;
