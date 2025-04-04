@@ -59,13 +59,11 @@
       </div>
     </header>
     <main>
-      <!-- ======================================================== -->
-
       <section class="hero">
         <div class="container">
           <img
-            class="hero__mp"
-            src="./images/hero/mp-logo.png"
+            class="hero-mp__image"
+            src="./images/hero/mp.jpg"
             alt="Mission Possible Venture Program Logo"
           />
           <h1 class="hero__title">
@@ -80,115 +78,276 @@
           </p>
           <a href="#pricing" class="hero__button link emp">TRY NOW</a>
         </div>
-        <div class="scrolling-wrapper">
+        <div class="hero-scrolling__wrapper">
           <img
             src="./images/hero/hero-examples.png"
             alt=""
             class="scrolling-image__desktop"
           />
           <img
+            aria-hidden="true"
             src="./images/hero/hero-examples.png"
             alt=""
             class="scrolling-image__desktop"
           />
         </div>
       </section>
-
-      <!-- ======================================================== -->
-
-      <section class="reviews__up">
+      <section class="channels">
         <div class="container">
-          <p class="reviews__up__title-desktop">
+          <p class="channels-title__desktop">
             <span class="emp">150M+ VIEWS</span> COLLECTED BY OUR USERS
           </p>
-          <div class="reviews__up__mobile-wrap">
-            <p class="reviews__up__title-mobile__first emp">150M+ VIEWS</p>
-            <p class="reviews__up__title-mobile__second">
-              COLLECTED BY OUR USERS
-            </p>
-          </div>
-          <div class="scrolling-wrapper-horizontal">
-            <img
-              src="./images/reviews/channels.png"
-              alt=""
-              class="scrolling-image__reviews"
-            />
-            <img
-              src="./images/reviews/channels.png"
-              alt=""
-              class="scrolling-image__reviews"
-            />
+          <div class="channels-title__mobile-wrap">
+            <p class="channels-title__mobile-first emp">150M+ VIEWS</p>
+            <p class="channels-title__mobile-second">COLLECTED BY OUR USERS</p>
           </div>
         </div>
+        <div class="carousel__wrapper">
+          <ul class="channels__list list">
+            <li class="channels__item">
+              <img
+                src="./images/channels/maverick.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">Maverick Willett</p>
+                <p class="channels__subscribers">23K+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/bihus.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">BIHUS Info</p>
+                <p class="channels__subscribers">1.1M+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/history.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">History Without Myths</p>
+                <p class="channels__subscribers">900K+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/max.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">Max Maher</p>
+                <p class="channels__subscribers">1M+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/craig.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">Just Some Geezer</p>
+                <p class="channels__subscribers">100K+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/price.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">Price of the State</p>
+                <p class="channels__subscribers">165K+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/kait.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">Kait Ann-Michelle</p>
+                <p class="channels__subscribers">33K+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/economy.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">EconomyTalk</p>
+                <p class="channels__subscribers">40K+ subscribers</p>
+              </div>
+            </li>
+          </ul>
+          <ul aria-hidden="true" class="channels__list list">
+            <li class="channels__item">
+              <img
+                src="./images/channels/maverick.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">Maverick Willett</p>
+                <p class="channels__subscribers">23K+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/bihus.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">BIHUS Info</p>
+                <p class="channels__subscribers">1.1M+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/history.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">History Without Myths</p>
+                <p class="channels__subscribers">900K+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/max.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">Max Maher</p>
+                <p class="channels__subscribers">1M+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/craig.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">Just Some Geezer</p>
+                <p class="channels__subscribers">100K+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/price.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">Price of the State</p>
+                <p class="channels__subscribers">165K+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/kait.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">Kait Ann-Michelle</p>
+                <p class="channels__subscribers">33K+ subscribers</p>
+              </div>
+            </li>
+            <li class="channels__item">
+              <img
+                src="./images/channels/economy.jpg"
+                alt=""
+                class="channels__pfp"
+              />
+              <div class="channels__info">
+                <p class="channels__name">EconomyTalk</p>
+                <p class="channels__subscribers">40K+ subscribers</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
-
-      <!-- ======================================================== -->
-
-      <section class="reviews__down">
+      <section class="reviews">
         <div class="container">
-          <p class="reviews__down__title">
-            SEE WHY SO MANY PEOPLE LOVE THUMB<span class="emp">NAILED IT</span>
+          <p class="reviews-title__desktop">
+            SEE WHY SO MANY CREATORS LOVE THUMB<span class="emp">NAILEDIT</span>
           </p>
-          <div class="reviews__down__wrapper">
-            <div class="reviews__down__card">
-              <p class="reviews__down__text">
-                “They are the GOAT`s. They gonna help you along the way with
+          <p class="reviews-title__mobile">WHY CREATORS LOVE US</p>
+          <div class="reviews-wrapper">
+            <div class="reviews-card">
+              <p class="reviews-text">
+                “They are the GOATs. They gonna help you along the way with
                 making sure your thumbnails looks good and people actually click
                 on them”
               </p>
-              <div class="reviews__down__creator__wrap">
+              <div class="reviews-creator__wrap">
                 <img
-                  src="./images/reviews/johnny.png"
+                  src="./images/reviews/johnny.jpg"
                   alt=""
-                  class="reviews__down__creator"
+                  class="reviews-creator"
                 />
-                <p class="reviews__down__name">Johnny Nitafan</p>
+                <p class="reviews-name">Johnny Nitafan</p>
               </div>
             </div>
-            <div class="reviews__down__card">
-              <p class="reviews__down__text">
-                “Most of the work that I`ve done with them really resulted in
+            <div class="reviews-card">
+              <p class="reviews-text">
+                “Most of the work that I've done with them really resulted in
                 growing my brand and also helping me make more money and truly
                 feel relax”
               </p>
-              <div class="reviews__down__creator__wrap">
+              <div class="reviews-creator__wrap">
                 <img
-                  src="./images/reviews/saif.png"
+                  src="./images/reviews/saif.jpg"
                   alt=""
-                  class="reviews__down__creator"
+                  class="reviews-creator"
                 />
-                <p class="reviews__down__name">Saif Agrebi</p>
+                <p class="reviews-name">Saif Agrebi</p>
               </div>
             </div>
-            <div class="reviews__down__card">
-              <p class="reviews__down__text">
+            <div class="reviews-card">
+              <p class="reviews-text">
                 “They are so easy to work with, the process is super simple for
                 doing awesome thumbnails. So 10/10”
               </p>
-              <div class="reviews__down__creator__wrap">
+              <div class="reviews-creator__wrap">
                 <img
-                  src="./images/reviews/peter.png"
+                  src="./images/reviews/peter.jpg"
                   alt=""
-                  class="reviews__down__creator"
+                  class="reviews-creator"
                 />
-                <p class="reviews__down__name">Peter Vander Wall</p>
+                <p class="reviews-name">Peter Vander Wall</p>
               </div>
             </div>
           </div>
-          <a href="#pricing" class="reviews__down__button link emp">TRY NOW</a>
+          <a href="#pricing" class="reviews-button link emp">TRY NOW</a>
         </div>
       </section>
-
-      <!-- ======================================================== -->
-
       <section class="process" id="process">
         <div class="container">
-          <p class="reviews__up__title-desktop">
+          <p class="process-title__desktop">
             INCREASE CTR IN<span class="emp"> 3 SIMPLE STEPS</span>
           </p>
-          <div class="reviews__up__mobile-wrap">
-            <p class="reviews__up__title-mobile__second">INCREASE CTR IN</p>
-            <p class="reviews__up__title-mobile__first emp">3 SIMPLE STEPS</p>
+          <div class="process__mobile-wrap">
+            <p class="process-title__mobile-second">INCREASE CTR IN</p>
+            <p class="process-title__mobile-first emp">3 SIMPLE STEPS</p>
           </div>
           <div class="stages-section">
             <div class="stages-container">
@@ -207,14 +366,14 @@
                 </p>
               </div>
               <div class="stage-box" data-stage="3">
-                <p class="process__title">3. Edit and use</p>
+                <p class="process__title">3. Make edits and boost CTR</p>
                 <p class="process__text">
                   Edit as needed and use the packages in the AB test to
                   determine the best option.
                 </p>
               </div>
             </div>
-            <div class="stage-image-container">
+            <div class="stage-image__container">
               <img
                 id="stage-image"
                 src="./images/process/drawing1.png"
@@ -224,103 +383,136 @@
           </div>
         </div>
       </section>
-
-      <!-- ======================================================== -->
-
       <section class="pricing" id="pricing">
         <div class="container">
           <p class="pricing__title">PRICING</p>
-          <div class="pricing-plans">
-            <div class="pricing-card">
-              <div class="pricing-card__wrapper">
-                <h2 class="plan-title">Light</h2>
-                <p class="plan-price">
-                  <span class="plan-price emp">$60</span>/mo
+          <ul class="pricing-card__list list">
+            <li class="pricing-card__item">
+              <div class="pricing-card__info">
+                <p class="pricing-card__title">Light</p>
+                <p class="pricing-card__price">
+                  <span class="pricing-card__price-number emp">$60</span>/mo
                 </p>
-                <p class="plan-credits">Up to 20 credits</p>
-                <div class="plan-includes">
-                  <h3>Includes:</h3>
-                  <ul>
-                    <li>
-                      <img src="./images/pricing/check.png" />Package generation
-                    </li>
-                    <li>
-                      <img src="./images/pricing/check.png" />Slack integration
-                    </li>
-                    <li>
-                      <img src="./images/pricing/check.png" />Thumbnail editing
-                      <span>soon</span>
-                    </li>
-                    <li class="plan-includes-unavailable">Automatic AB test</li>
-                    <li class="plan-includes-unavailable">CTR analytics</li>
-                  </ul>
-                </div>
+                <p class="pricing-card__subtitle">Up to 20 credits</p>
+                <p class="pricing-card__includes">Includes:</p>
+                <ul class="pricing-card__info-list list">
+                  <li class="pricing-card__info-item">
+                    <svg class="pricing__tick">
+                      <use href="./images/icons.svg#pricing__tick"></use>
+                    </svg>
+                    Package generation
+                  </li>
+                  <li class="pricing-card__info-item">
+                    <svg class="pricing__tick">
+                      <use href="./images/icons.svg#pricing__tick"></use>
+                    </svg>
+                    Slack integration
+                  </li>
+                  <li class="pricing-card__info-item">
+                    <svg class="pricing__tick">
+                      <use href="./images/icons.svg#pricing__tick"></use>
+                    </svg>
+                    Thumbnail editing
+                    <span class="pricing-card__info-soon"
+                      >&nbsp;soon&nbsp;</span
+                    >
+                  </li>
+                  <li class="pricing-card__info-item unavailable">
+                    <svg class="pricing__tick">
+                      <use href="./images/icons.svg#pricing__tick"></use>
+                    </svg>
+                    Automatic A/B test
+                  </li>
+                  <li class="pricing-card__info-item unavailable">
+                    <svg class="pricing__tick">
+                      <use href="./images/icons.svg#pricing__tick"></use>
+                    </svg>
+                    CTR Analysis
+                  </li>
+                </ul>
               </div>
-              <a href="#" class="plan-button link emp">Start</a>
-            </div>
-            <div class="pricing-card">
-              <div class="pricing-card__wrapper">
-                <h2 class="plan-title">Basic</h2>
-                <p class="plan-price">
-                  <span class="plan-price emp">$100</span>/mo
+              <a href="#" class="pricing-plan__button link emp">START</a>
+            </li>
+            <li class="pricing-card__item">
+              <div class="pricing-card__info">
+                <p class="pricing-card__title main">Basic</p>
+                <p class="pricing-card__price main">
+                  <span class="pricing-card__price-number emp main">$100</span
+                  >/mo
                 </p>
-                <p class="plan-credits">Up to 40 credits</p>
-                <div class="plan-includes">
-                  <h3>Includes:</h3>
-                  <ul>
-                    <li>
-                      <img src="./images/pricing/check.png" />Package generation
-                    </li>
-                    <li>
-                      <img src="./images/pricing/check.png" />Slack integration
-                    </li>
-                    <li>
-                      <img src="./images/pricing/check.png" />Thumbnail editing
-                      <span>soon</span>
-                    </li>
-                    <li>
-                      <img src="./images/pricing/check.png" />Automatic AB test
-                      <span>soon</span>
-                    </li>
-                    <li>
-                      <img src="./images/pricing/check.png" />CTR analytics
-                      <span>soon</span>
-                    </li>
-                  </ul>
-                </div>
+                <p class="pricing-card__subtitle main">Up to 40 credits</p>
+                <p class="pricing-card__includes main">Includes:</p>
+                <ul class="pricing-card__info-list list">
+                  <li class="pricing-card__info-item main">
+                    <svg class="pricing__tick main">
+                      <use href="./images/icons.svg#pricing__tick"></use>
+                    </svg>
+                    Package generation
+                  </li>
+                  <li class="pricing-card__info-item main">
+                    <svg class="pricing__tick main">
+                      <use href="./images/icons.svg#pricing__tick"></use>
+                    </svg>
+                    Slack integration
+                  </li>
+                  <li class="pricing-card__info-item main">
+                    <svg class="pricing__tick main">
+                      <use href="./images/icons.svg#pricing__tick"></use>
+                    </svg>
+                    Thumbnail editing
+                    <span class="pricing-card__info-soon"
+                      >&nbsp;soon&nbsp;</span
+                    >
+                  </li>
+                  <li class="pricing-card__info-item main">
+                    <svg class="pricing__tick main">
+                      <use href="./images/icons.svg#pricing__tick"></use>
+                    </svg>
+                    Automatic A/B test
+                    <span class="pricing-card__info-soon"
+                      >&nbsp;soon&nbsp;</span
+                    >
+                  </li>
+                  <li class="pricing-card__info-item main">
+                    <svg class="pricing__tick main">
+                      <use href="./images/icons.svg#pricing__tick"></use>
+                    </svg>
+                    CTR Analysis
+                    <span class="pricing-card__info-soon"
+                      >&nbsp;soon&nbsp;</span
+                    >
+                  </li>
+                </ul>
               </div>
-              <a href="#" class="plan-button link emp">Start</a>
-            </div>
-            <div class="pricing-card">
-              <div class="pricing-card__wrapper">
-                <h2 class="plan-title">Custom</h2>
-                <p class="plan-price">
-                  <span class="plan-price emp">$100+</span>/mo
+              <a href="#" class="pricing-plan__button link emp main">START</a>
+            </li>
+            <li class="pricing-card__item">
+              <div class="pricing-card__info">
+                <p class="pricing-card__title">Custom</p>
+                <p class="pricing-card__price">
+                  <span class="pricing-card__price-number emp">$100+</span>/mo
                 </p>
-                <p class="plan-credits">Customized amount</p>
-                <div class="plan-includes">
-                  <h3>Includes:</h3>
-                  <p>
-                    Same as in the Basic plan, but instead of generating, a
-                    professional designer is engaged in the creation, taking
-                    into account all custom wishes.
-                  </p>
-                </div>
+                <p class="pricing-card__subtitle">Customized amount</p>
+                <p class="pricing-card__includes">Includes:</p>
+                <p class="pricing-card__info-item">
+                  Everything from the Basic plan, but instead of auto-generation
+                  your thumbnails are designed by a professional graphic
+                  designer.
+                </p>
               </div>
-              <a href="#" class="plan-button link emp">Book a call</a>
-            </div>
-          </div>
+              <a href="#" class="pricing-plan__button link emp">BOOK A CALL</a>
+            </li>
+          </ul>
         </div>
       </section>
-
-      <!-- ======================================================== -->
-
       <section class="faq">
         <div class="container">
           <div id="faq">
             <h1>FAQ</h1>
             <div class="faq-item pointer">
-              <div class="faq-question">Who does Thumbnailed.it work with?</div>
+              <div class="faq-question">
+                What kind of YouTube channels do you work with?
+              </div>
               <div class="faq-answer">
                 We are ready to optimize the performance of both channels that
                 have already achieved a certain result and want to reach new
@@ -328,13 +520,13 @@
                 to success is quality content and consistency. No matter how
                 high-quality the thumbnails are, if the video is gray noise, the
                 channel wil not succeed under any circumstances. The same
-                applies to those bloggers who caught fire with an idea but only
+                applies to those creators who caught fire with an idea but only
                 lasted a couple of months.
               </div>
             </div>
             <div class="faq-item pointer">
               <div class="faq-question">
-                Can Thumbnailed.it incorporate our existing branding?
+                Can you incorporate our existing branding?
               </div>
               <div class="faq-answer">
                 Of course, we will simply design the concepts within your
@@ -343,7 +535,7 @@
             </div>
             <div class="faq-item pointer">
               <div class="faq-question">
-                What if I'm not satisfied with the final thumbnail or title?
+                What if I'm not satisfied with the final deliverables?
               </div>
               <div class="faq-answer">
                 Despite the fact that we create images with a focus on
@@ -358,38 +550,42 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-container">
-        <a href="https://thumbnailed-it.com" class="footer-logo__link link">
-          <div class="footer-logo">
-            <p class="footer-logo__left">THUMB</p>
-            <p class="footer-logo__right emp">NAILED.IT</p>
-          </div>
-        </a>
-        <div class="footer-socials__list">
-          <a
-            href="https://www.instagram.com/thumbnailed.lt/"
-            class="footer-socials__image link"
-            ><img src="./images/socials-icons/logo-instagram.png" alt=""
-          /></a>
-          <a
-            href="https://www.tiktok.com/@thumbnailed.lt"
-            class="footer-socials__image link"
-            ><img src="./images/socials-icons/logo-tiktok.png" alt=""
-          /></a>
-          <a href="https://x.com/" class="footer-socials__image link"
-            ><img src="./images/socials-icons/logo-twitter.png" alt=""
-          /></a>
-          <a href="https://www.behance.net/" class="footer-socials__image link"
-            ><img src="./images/socials-icons/logo-behance.png" alt=""
-          /></a>
-        </div>
+      <div class="container">
+        <ul class="footer-socials__list list">
+          <li class="footer-socials__item">
+            <a
+              href="https://www.instagram.com/thumbnailed.lt/"
+              class="footer-socials__image link"
+              ><img src="./images/socials-icons/logo-instagram.png" alt=""
+            /></a>
+          </li>
+          <li class="footer-socials__item">
+            <a
+              href="https://www.tiktok.com/@thumbnailed.lt"
+              class="footer-socials__image link"
+              ><img src="./images/socials-icons/logo-tiktok.png" alt=""
+            /></a>
+          </li>
+          <li class="footer-socials__item">
+            <a href="https://x.com/" class="footer-socials__image link"
+              ><img src="./images/socials-icons/logo-twitter.png" alt=""
+            /></a>
+          </li>
+          <li class="footer-socials__item">
+            <a
+              href="https://www.behance.net/"
+              class="footer-socials__image link"
+              ><img src="./images/socials-icons/logo-behance.png" alt=""
+            /></a>
+          </li>
+        </ul>
         <a href="terms-of-service.html" class="footer-terms__link link"
           >TERMS OF SERVICE</a
         >
       </div>
     </footer>
+    <script src="./js/hero-carousel.js"></script>
     <script src="./js/process-switcher.js"></script>
     <script src="./js/faq.js"></script>
-    <script src="./js/footer-carousel.js"></script>
   </body>
 </html>

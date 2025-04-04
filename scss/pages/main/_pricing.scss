@@ -1,157 +1,591 @@
 .pricing {
   padding-top: 50px;
   padding-bottom: 50px;
-}
 
-.pricing .container {
-  padding-left: 0;
-  padding-right: 0;
+  border-bottom: 1px solid var(--darkgrey);
+
+  & .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .pricing__title {
-  font-size: 2.7em;
-  text-align: center;
+  font-size: clamp(32px, 8.8vw, 42px);
   font-weight: 700;
-  margin-bottom: 1em;
-}
+  text-align: center;
+  margin-bottom: 25px;
 
-.pricing-plans {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+  @media screen and (min-width: 480px) {
+    font-size: 46px;
+  }
 
-  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
 
-  @media screen and (min-width: 769px) {
-    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 900px) {
+    font-size: 38px;
+
+    margin-bottom: 35px;
   }
 
   @media screen and (min-width: 1024px) {
-    width: 80%;
+    font-size: 42px;
+
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+
+    margin-bottom: 45px;
   }
 }
 
-.pricing-card {
+.pricing-card__list {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 420px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 900px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 900px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1060px;
+  }
+}
+
+.pricing-card__item {
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
   background: radial-gradient(circle at top, #191919, #292929);
-  width: 80%;
-  //   height: 500px;
-  min-height: 500px;
-
-  padding: 3rem;
-
   border-radius: 10px;
 
-  @media screen and (min-width: 769px) {
-    // width: calc((100% - 60px) / 3);
-    width: 32%;
+  padding: 40px;
+
+  @media screen and (max-width: 479px) {
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 480px) {
+    height: 600px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 31.25%;
+    height: 350px;
+
+    padding: 20px;
+  }
+
+  @media screen and (min-width: 900px) {
+    height: 400px;
+
+    padding: 25px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 450px;
+
+    padding: 33px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 500px;
+
+    padding: 40px;
+  }
+
+  &:nth-child(2) {
+    @media screen and (min-width: 768px) {
+      width: 37.5%;
+
+      height: 400px;
+    }
+
+    @media screen and (min-width: 900px) {
+      height: 460px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      height: 530px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      height: 600px;
+    }
   }
 }
 
-.pricing-card:nth-child(2) {
-  @media screen and (min-width: 769px) {
-    font-size: 1.2rem;
-    // height: 600px;
-    min-height: 600px;
-    width: 36%;
-  }
-}
-
-.pricing-card__wrapper {
+.pricing-card__info {
   align-self: flex-start;
 }
 
-.plan-title {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+.pricing-card__title {
+  font-weight: 700;
+  margin-bottom: 20px;
+
+  font-size: clamp(24px, 6vw, 28px);
+
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 900px) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+  }
+
+  &.main {
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+    }
+
+    @media screen and (min-width: 900px) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+    }
+  }
 }
 
-.plan-price {
-  font-size: 1.8rem;
-  margin-bottom: 0.2rem;
-}
-
-.plan-price .emp {
+.pricing-card__price-number {
   color: var(--green);
-  font-size: 2em;
+
+  font-size: clamp(54px, 13.6vw, 64px);
+
+  @media screen and (min-width: 480px) {
+    font-size: 64px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+  }
+
+  @media screen and (min-width: 900px) {
+    font-size: 46px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 54px;
+  }
+
+  &.main {
+    @media screen and (min-width: 768px) {
+      font-size: 52px;
+    }
+
+    @media screen and (min-width: 900px) {
+      font-size: 56px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 64px;
+    }
+  }
 }
 
-.plan-credits {
-  margin-bottom: 2rem;
+.pricing-card__price {
+  font-size: clamp(24px, 6vw, 28px);
+  font-weight: 700;
+
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 900px) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+  }
+
+  &.main {
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+    }
+
+    @media screen and (min-width: 900px) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+}
+
+.pricing-card__subtitle {
+  color: var(--lightgrey);
+  margin-bottom: 25px;
+
+  font-size: clamp(18px, 4.6vw, 22px);
+
+  @media screen and (min-width: 480px) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 900px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+
+  &.main {
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: 900px) {
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 22px;
+    }
+  }
+}
+
+.pricing-card__includes {
+  font-weight: 700;
+  margin-bottom: 10px;
+
+  font-size: 5.8vw;
+  font-size: clamp(23px, 5.8vw, 28px);
+
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+
+  @media screen and (min-width: 900px) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+  }
+
+  &.main {
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+    }
+
+    @media screen and (min-width: 900px) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+}
+
+.pricing-card__info-item {
+  color: var(--lightgrey);
+  margin-bottom: 10px;
   font-weight: 500;
-  color: #a5a5a5;
-}
 
-.plan-includes {
-  margin-bottom: 1.5rem;
-  color: #a5a5a5;
-}
-
-.plan-includes h3 {
-  color: white;
-  margin-bottom: 0.5rem;
-}
-
-.plan-includes ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.plan-includes li {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 0.5rem;
+
+  font-size: 3.8vw;
+
+  @media screen and (min-width: 480px) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  @media screen and (min-width: 900px) {
+    font-size: 13px;
+    margin-bottom: 7.5px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
+
+  &.main {
+    @media screen and (min-width: 768px) {
+      font-size: 15px;
+    }
+
+    @media screen and (min-width: 900px) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 19px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 22px;
+    }
+  }
+
+  &.unavailable {
+    color: var(--darkgrey);
+
+    svg {
+      color: transparent;
+    }
+  }
 }
 
-.plan-includes img {
-  width: 18px;
-  height: 19px;
+.pricing__tick {
+  fill: currentColor;
+
+  width: 12px;
+  height: 12px;
+
+  @media screen and (min-width: 400px) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 12px;
+    height: 12px;
+  }
+
+  @media screen and (min-width: 900px) {
+    width: 13px;
+    height: 13px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 15px;
+    height: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 18px;
+    height: 18px;
+  }
+
+  &.main {
+    @media screen and (min-width: 768px) {
+      width: 15px;
+      height: 15px;
+    }
+
+    @media screen and (min-width: 900px) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 18px;
+      height: 18px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 22px;
+      height: 22px;
+    }
+  }
 }
 
-.plan-includes span {
+.pricing-card__info-soon {
   font-weight: 700;
   color: var(--black);
   background-color: var(--green);
 }
 
-.plan-includes-unavailable {
-  margin-left: 28px;
-  color: #5a5a5a;
-}
-
-.plan-button {
+.pricing-plan__button {
   display: flex;
-  justify-content: center;
   align-items: center;
-  cursor: pointer;
+  justify-content: center;
 
   background-image: url(..//..//images/button-background/button.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  width: 70%;
-  aspect-ratio: 3.29 / 1;
-  font-size: 5vw;
+  aspect-ratio: 3 / 1;
+  width: 90%;
 
-  @media (min-width: 769px) {
-    width: 100%;
+  font-size: clamp(24px, 10vw, 52px);
+  color: var(--black);
 
-    font-size: 3vw;
-    color: var(--black);
+  @media screen and (min-width: 480px) {
+    width: 279px;
+    height: 93px;
+
+    font-size: 52px;
   }
-}
 
-@media (max-width: 768px) {
-  .pricing-plans {
-    flex-direction: column;
-    align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 150px;
+    height: 50px;
+
+    font-size: 28px;
   }
+
+  @media screen and (min-width: 900px) {
+    width: 174px;
+    height: 58px;
+
+    font-size: 34px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 207px;
+    height: 69px;
+
+    font-size: 41px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    height: 77px;
+    font-size: 45px;
+  }
+
+  &.main {
+    @media screen and (min-width: 768px) {
+      width: 174px;
+      height: 58px;
+
+      font-size: 46px;
+    }
+
+    @media screen and (min-width: 900px) {
+      width: 207px;
+      height: 69px;
+
+      font-size: 52px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 243px;
+      height: 81px;
+
+      font-size: 56px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 279px;
+      height: 93px;
+
+      font-size: 60px;
+    }
+  }
+
+  cursor: pointer;
 }
