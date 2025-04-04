@@ -3,13 +3,6 @@ html {
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter.woff2") format("woff2"), url("../fonts/Inter.woff") format("woff"), url("../fonts/Inter.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "HYPEGOALS";
   src: url("../fonts/HYPEGOALS.woff2") format("woff2"), url("../fonts/HYPEGOALS.woff") format("woff"), url("../fonts/HYPEGOALS.TTF") format("truetype");
   font-weight: normal;
@@ -681,8 +674,12 @@ img {
 
 .process {
   padding-top: 50px;
-  padding-bottom: 50px;
   border-bottom: 1px solid var(--darkgrey);
+}
+@media screen and (min-width: 768px) {
+  .process {
+    padding-bottom: 50px;
+  }
 }
 .process .container {
   padding-left: 30px;
