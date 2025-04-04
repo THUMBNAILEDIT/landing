@@ -702,12 +702,8 @@ img {
 
 .process {
   padding-top: 50px;
+  padding-bottom: 50px;
   border-bottom: 1px solid var(--darkgrey);
-}
-@media screen and (min-width: 768px) {
-  .process {
-    padding-bottom: 50px;
-  }
 }
 .process .container {
   padding-left: 30px;
